@@ -13,6 +13,10 @@ function generatePassword() {
     alert("Please choose a password of at least 8 characters. Please start over.");
     return;
   }
+  if (passwordLength > 128) {
+    alert("Please choose a password of less than 128 characters. Please start over.");
+    return;
+  }
   var wantsLowercase = confirm("Would you like lowercase letters? Select ok for yes, cancel for no.");
   if (wantsLowercase) {
     alert("Lowercase letters included. Select ok to go to the next step.");
@@ -52,7 +56,16 @@ function generatePassword() {
 // Need to define my character set array, my return value math, and how my password comes. 
 // Need to update this to be an array. If they select blah then they can a few random blah. 
 // my charset is only 92 characters. Need help with this portion. Need to update this to be an array. I thought my math would make it stop and not go over the 128 in the requirements.
-  var charset =("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!#$%&'()*+,-/:;<>?@[]\^_{}`~'");
+
+// Establish my character set arrays 
+var charsetLower =("abcdefghijklmnopqrstuvwxyz");
+var charsetUpper =("ABCDEFGHIJKLMNOPQRSTUVWXYZ");
+var charsetNumber =("0123456789");
+var charseSpecial =("!#$%&'()*+,-/:;<>?@[]\^_{}`~");
+
+
+// var charset =("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!#$%&'()*+,-/:;<>?@[]\^_{}`~'");
+
 var passwordGen = "";
   for (var i=0, n= charset.length; i < passwordLength; ++i) {
     passwordGen += charset.charAt(Math.floor(Math.random() + n ));
