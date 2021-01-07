@@ -14,13 +14,33 @@ function generatePassword() {
     alert("Please choose a password of at least 8 characters. Please start over.");
     return;
   }
-
-  var wantsLowercase = confirm("Would you like lowercase letters? Select ok for yes, cancel for no");
+  var wantsLowercase = confirm("Would you like lowercase letters? Select ok for yes, cancel for no.");
   if (wantsLowercase) {
-    alert("Lowercase letters included. Select ok to go to the next step");
+    alert("Lowercase letters included. Select ok to go to the next step.");
   }
   else {
-    alert("Not including lowercase letters");
+    alert("Not including lowercase letters.");
+  }
+  var wantsUppercase =confirm("Would you like to include uppercase letters? Select ok for yes, cancel for no.");
+  if (wantsUppercase) {
+    alert("Uppercase letters included. Select ok to go to the next step.");
+  }
+  else { 
+    alert ("Not including uppercase letters.");
+  }
+  var wantsNumbers =confirm("Would you like to include numbers? Select ok for yes, cancel for no.");
+  if (wantsNumbers) {
+    alert("Numbers are included. Select ok to go to the next step.");
+  }
+  else { 
+    alert ("Not including numbers.");
+  }
+  var wantsSpecialcharacters =confirm("Would you like to include special characters? Select ok for yes, cancel for no.");
+  if (wantsSpecialcharacters) {
+    alert("Special characters are included. Select ok to go to the next step.");
+  }
+  else { 
+    alert ("Not including special characters.");
   }
 }
 
