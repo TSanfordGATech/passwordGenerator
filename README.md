@@ -2,15 +2,16 @@
 Created by: Tori Sanford
 Date: 01/04/2020 
 Contact: Tori.danielle.clark91@gmail.com
-Link to deployed project: 
-Screen shot of completed assignment: ![Final Screen shot](./assets/images/myfinal.png) (copied from my previous read me. Input screenshot at end)
+Link to deployed project: https://tsanfordgatech.github.io/passwordGenerator/
+Screen shot of completed assignment: ![Final Screen shot](./assets/screenshot.png) (copied from my previous read me. Input screenshot at end)
 
 About this Project: 
 This project is my CSS/bootstrap homework assignment. My objective is to create an application that an employee can use to generate a random password based off a specific criteria outlined in my read me and html. 
 
 What I learned from this project: 
-- INPUT THAT HERE
-
+- better use of variables 
+- how to properly use and call an array
+- proper usage of an event listener 
 
 This is the user story: 
 AS AN employee with access to sensitive data
